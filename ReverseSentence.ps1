@@ -21,10 +21,10 @@ function Get-ReverseV1
     while($counter -lt $split.count){
         $result += $split[-($counter)-1] + " "
         $counter += 1
-    }
+    } # End While $counter
 
     $result
-}
+    } # End Function Get-ReverseV1
 
 Get-ReverseV1 -phrase "Choppa","The","To","Get"
 
