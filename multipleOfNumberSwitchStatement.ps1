@@ -7,6 +7,8 @@ The second version will loop through 1 to 100 and find out if it is a multiple o
 The third version will loop through 1 to 100 and find out if it is a multiple of any numbers between 1 and 100. 
 #>
 
+# Version 1
+
 # The foreach will loop through each number from 1 to 100 and store it in a temporary variable $number for use in the switch statement
 Foreach ($number in 1..100) 
     {
@@ -18,12 +20,12 @@ Foreach ($number in 1..100)
         {-not ($_ % 5 ) } {"$_ is multiple of 5"; break }
         {-not ($_ % 3) } {"$_ is multiple of 3"; break }
         default { $_ }
-        } 
-    }
+        } # End switch   
+    } # End Foreach $number
 
+# Version 2
 
-
-#This version allows for a number to report if its a multiple of more than one of the numbers 15, 5, or 3. 
+# Run a Foreach loop going through each number 1 through 100 and assigning it to a temporary variable $number
 Foreach ($number in 1..100) 
     {
     switch ($number) 
@@ -38,20 +40,18 @@ Foreach ($number in 1..100)
         {-not ($_ % 5 ) } {"$_ is multiple of 5"; break }
         {-not ($_ % 3) } {"$_ is multiple of 3"; break }
         default { $_ }
-        } 
-    }
+        } # End switch  
+    } # End Foreach $number
 
+# Version 3
 
-
-# This version will get all the multiples of the numbers 1 to 100 using two foreach loops and an if statement
-
-# Run a foreach loop going through each number 1 through 100 and assigning it to a temporary variable $number
+# Run a Foreach loop going through each number 1 through 100 and assigning it to a temporary variable $number
 Foreach ($number in 1..100) 
     {
     # Declare variable called $multiples as an array
     $multiples = @()
 
-    # Run a foreach loop going through each number 1 through 100 and assigning it to a temporary variable $multiple to hold the multiple values
+    # Run a Foreach loop going through each number 1 through 100 and assigning it to a temporary variable $multiple to hold the multiple values
     Foreach ($multiple in 1..100)
     {
         # If Statement that ensures that there is no remainder from dividing $number by $multiple then stores it in a temporary array $multiples
@@ -59,7 +59,7 @@ Foreach ($number in 1..100)
         {
             $multiples += $multiple
 
-        } # end if statement
+        } # end If statement
 
     } # End Foreach $multiple
 
