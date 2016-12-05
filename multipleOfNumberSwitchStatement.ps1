@@ -5,8 +5,6 @@ Description: This script will print out the numbers 1 to 100 and find the multip
 The first version will loop through 1 to 100 and find out if it is mutiple of 15, then 5, and then 3 but not all of them.
 The second version will loop through 1 to 100 and find out if it is a multiple of 15, 5, and 3.
 The third version will loop through 1 to 100 and find out if it is a multiple of any numbers between 1 and 100. 
-
-
 #>
 
 # The foreach will loop through each number from 1 to 100 and store it in a temporary variable $number for use in the switch statement
