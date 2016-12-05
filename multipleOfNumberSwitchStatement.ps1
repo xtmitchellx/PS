@@ -1,7 +1,11 @@
 ﻿<#
 Author Tim Mitchell
 Date 12/4/2016
-Description: This script will print out the numbers 1 to 100, if the number is a multiple of 15, 5, or 3 it will say it.
+Description: This script will print out the numbers 1 to 100 and find the multiples of those numbers in three different versions. 
+The first version will loop through 1 to 100 and find out if it is mutiple of 15, then 5, and then 3 but not all of them.
+The second version will loop through 1 to 100 and find out if it is a multiple of 15, 5, and 3.
+The third version will loop through 1 to 100 and find out if it is a multiple of any numbers between 1 and 100. 
+
 
 #>
 
