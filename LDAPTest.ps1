@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 ﻿# LDAPTest.ps1
+=======
+# LDAPTest.ps1
+>>>>>>> 024188b4a9b3838fb83adc5d676dc3d32d778b97
 # Author: Timothy Mitchell
 # Date: 6/17/2017
 # This script will poll all Domain Controllers, if they are pingable then it will attempt an LDAP connection.
 
+<<<<<<< HEAD
 param
 (
   [String]
@@ -10,6 +15,10 @@ param
   [string]
   $DomainName
 )
+=======
+# Domain Name
+$domainName = ''
+>>>>>>> 024188b4a9b3838fb83adc5d676dc3d32d778b97
 
 # Create Log
 if (Test-Path $env:TEMP\dc.csv) {
